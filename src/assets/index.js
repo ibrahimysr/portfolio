@@ -21,6 +21,17 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
+// New Technology Icons
+import flutter from "./tech/flutter.svg";
+import python from "./tech/python.svg";
+import php from "./tech/php.svg";
+import laravel from "./tech/laravel.png";
+import firebase from "./tech/firebase.png";
+import mysql from "./tech/mysql.png";
+import postgresql from "./tech/postgresql.png";
+import dart from "./tech/dart.png";
+import tensorflow from "./tech/tensorflow.png";
+
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
@@ -52,6 +63,15 @@ export {
   tailwind,
   typescript,
   threejs,
+  flutter,
+  python,
+  php,
+  laravel,
+  firebase,
+  mysql,
+  postgresql,
+  dart,
+  tensorflow,
   meta,
   shopify,
   starbucks,

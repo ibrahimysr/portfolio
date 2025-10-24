@@ -23,6 +23,15 @@ import {
   jobit,
   tripguide,
   threejs,
+  flutter,
+  python,
+  php,
+  laravel,
+  firebase,
+  mysql,
+  postgresql,
+  dart,
+  tensorflow,
 } from "../assets";
 
 export const navLinks = [
@@ -42,11 +51,11 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Full-Stack Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Mobile App Developer",
     icon: mobile,
   },
   {
@@ -54,19 +63,19 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "AI/ML Enthusiast",
     icon: creator,
   },
 ];
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: "Flutter",
+    icon: flutter,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "Python",
+    icon: python,
   },
   {
     name: "JavaScript",
@@ -81,32 +90,32 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
     name: "Node JS",
     icon: nodejs,
+  },
+  {
+    name: "Laravel",
+    icon: laravel,
+  },
+  {
+    name: "Firebase",
+    icon: firebase,
+  },
+  {
+    name: "MySQL",
+    icon: mysql,
   },
   {
     name: "MongoDB",
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "TensorFlow",
+    icon: tensorflow,
   },
   {
     name: "git",
     icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
   },
   {
     name: "docker",
@@ -116,55 +125,55 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
+    title: "Mobile App Developer",
+    company_name: "Gaziantep Bilişim",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "2025 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing and maintaining mobile applications using Flutter and Firebase.",
+      "Building RESTful APIs with Laravel and PHP for mobile app backends.",
+      "Implementing real-time features and cloud storage solutions using Firebase.",
+      "Testing and debugging mobile applications using Postman for API integration.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
+    title: "Mobile App Developer",
+    company_name: "Gaziantep Bilişim",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed cross-platform mobile applications with Flutter framework.",
+      "Integrated Firebase services for authentication, database, and cloud storage.",
+      "Collaborated with team members to deliver high-quality mobile solutions.",
+      "Performed API testing and integration using Postman.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
+    title: "AI/ML Developer",
+    company_name: "NLK Bilgi Teknolojileri A.Ş",
     icon: shopify,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Worked on artificial intelligence and machine learning projects.",
+      "Developed computer vision applications using deep learning algorithms.",
+      "Implemented image processing solutions for real-world problems.",
+      "Utilized Python and TensorFlow for AI model development.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
+    title: "Automation Technician",
+    company_name: "Uygur Otomasyon ve Mühendislik",
     icon: meta,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "2019",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Worked with industrial automation technologies and systems.",
+      "Developed PLC programming solutions for automation processes.",
+      "Gained hands-on experience in automation engineering.",
+      "Collaborated with engineering teams on automation projects.",
     ],
   },
 ];
@@ -172,94 +181,145 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Thanks to İbrahim's mobile application, our operations have become much more efficient. His technical knowledge and problem-solving skills are excellent.",
+    name: "Fatih Kirazoğlu",
+    designation: "Automation Teacher",
+    company: "OSB Technical College",
+    image: "https://randomuser.me/api/portraits/men/1.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "His performance in artificial intelligence projects and learning speed are admirable. He is a developer with a bright future.",
+    name: "Ali Yılmaz",
+    designation: "Project Manager",
+    company: "NLK Bilgi Teknolojileri",
+    image: "https://randomuser.me/api/portraits/men/2.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "The applications he developed with Flutter are both user-friendly and high-performance. I definitely recommend him.",
+    name: "Ayşe Demir",
+    designation: "Product Manager",
+    company: "Gaziantep Bilişim",
+    image: "https://randomuser.me/api/portraits/women/3.jpg",
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Star Storyteller",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "An interactive story reading mobile app for children developed with Flutter. Published on the App Store, featuring AI-powered storytelling to develop children's imagination with engaging narratives.",
     tags: [
       {
-        name: "react",
+        name: "flutter",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "firebase",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "ai",
         color: "pink-text-gradient",
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/ibrahimysr",
   },
   {
-    name: "Job IT",
+    name: "AI-Powered Eye Care App",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A comprehensive health application offering tests, exercises, and eye disease detection. Features include personalized diet planning with API integrations and database optimization for health data management.",
     tags: [
       {
-        name: "react",
+        name: "flutter",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "firebase",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "python",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/ibrahimysr",
   },
   {
-    name: "Trip Guide",
+    name: "E-Commerce Platform",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A full-featured restaurant e-commerce mobile application developed with Flutter. Features include user authentication, real-time database, cloud storage, and comprehensive API testing with Postman.",
     tags: [
       {
-        name: "nextjs",
+        name: "flutter",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "firebase",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "figma",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/ibrahimysr",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+// Achievements and Certifications
+const achievements = [
+  {
+    title: "TEKNOFEST 2024",
+    description: "Industrial Digital Technologies Competition - Participated with innovative technology solutions",
+    year: "2024",
+  },
+  {
+    title: "Software Captain",
+    description: "SAVTEK Community - Led software development initiatives and mentored team members",
+    year: "2022",
+  },
+];
+
+const certifications = [
+  {
+    title: "Flutter Development",
+    organization: "Udemy",
+    year: "2022",
+  },
+  {
+    title: "SQL Database Management",
+    organization: "Udemy",
+    year: "2022",
+  },
+  {
+    title: "C# Programming",
+    organization: "Udemy",
+    year: "2023",
+  },
+  {
+    title: "Data Science and Artificial Intelligence",
+    organization: "Udemy",
+    year: "2023",
+  },
+];
+
+const education = [
+  {
+    school: "Selçuk University",
+    degree: "Bachelor of Computer Engineering",
+    duration: "2021 - 2025",
+    gpa: "3.35 / 4.00",
+  },
+  {
+    school: "OSB Technical and Industrial Vocational High School",
+    degree: "Automation Technologies Technician",
+    duration: "2017 - 2021",
+  },
+];
+
+export { services, technologies, experiences, testimonials, projects, achievements, certifications, education };

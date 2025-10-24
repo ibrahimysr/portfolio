@@ -47,11 +47,15 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I'm a Computer Engineering student at Selçuk University (GPA: 3.35/4.00) with a 
+        strong passion for mobile app development and artificial intelligence. During my 
+        university years, I've participated in various research projects and worked on 
+        diverse projects including data collection, analysis, and real-time data processing 
+        using Flutter, Firebase, Laravel, and Python. I specialize in building cross-platform 
+        mobile applications and AI-powered solutions. I'm a quick learner who stays up-to-date 
+        with career developments and enjoys tackling real-world problems with innovative 
+        technology. My team-oriented approach and solution-focused mindset help me deliver 
+        high-quality results. Let's work together to bring your ideas to life!
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
