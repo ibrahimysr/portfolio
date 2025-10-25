@@ -28,10 +28,13 @@ import mysql from "./tech/mysql.png";
 import postgresql from "./tech/postgresql.png";
 import dart from "./tech/dart.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+
+
+import gbbbilisim from "./company/gbbbilisim.png";
+import nlkbilgiteknolojileri from "./company/nlksoft.png";
+import uygurotomasyonvemühendislik from "./company/uygur.png";
+
+import ginteknoloji from "./company/ginteknoloji.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -65,10 +68,11 @@ export {
   mysql,
   postgresql,
   dart,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+
+  ginteknoloji,
+  gbbbilisim,
+  nlkbilgiteknolojileri,
+  uygurotomasyonvemühendislik,
   carrent,
   jobit,
   tripguide,

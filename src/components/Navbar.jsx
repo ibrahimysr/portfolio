@@ -49,7 +49,7 @@ const Navbar = () => {
           </p>
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className='list-none hidden sm:flex flex-row gap-10 items-center'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -61,6 +61,18 @@ const Navbar = () => {
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
+          <li>
+            <a
+              href='/cv.pdf'
+              download='Ibrahim_Yasar_CV.pdf'
+              className='bg-gradient-to-r from-[#915EFF] to-[#00cea8] hover:from-[#7c3aed] hover:to-[#915EFF] text-white px-5 py-2 rounded-full font-medium text-[16px] transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-[#915EFF]/50 flex items-center gap-2'
+            >
+              <svg className='w-5 h-5' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
+                <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z' />
+              </svg>
+              CV
+            </a>
+          </li>
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
@@ -91,6 +103,19 @@ const Navbar = () => {
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
+              <li className='w-full mt-2'>
+                <a
+                  href='/cv.pdf'
+                  download='Ibrahim_Yasar_CV.pdf'
+                  className='bg-gradient-to-r from-[#915EFF] to-[#00cea8] hover:from-[#7c3aed] hover:to-[#915EFF] text-white px-4 py-2 rounded-full font-medium text-[14px] transition-all duration-300 flex items-center gap-2 w-full justify-center'
+                  onClick={() => setToggle(!toggle)}
+                >
+                  <svg className='w-4 h-4' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
+                    <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z' />
+                  </svg>
+                  Download CV
+                </a>
+              </li>
             </ul>
           </div>
         </div>

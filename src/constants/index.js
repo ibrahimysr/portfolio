@@ -14,10 +14,7 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+
   carrent,
   jobit,
   tripguide,
@@ -29,6 +26,10 @@ import {
   mysql,
   postgresql,
   dart,
+  ginteknoloji,
+  gbbbilisim,
+  nlkbilgiteknolojileri,
+  uygurotomasyonvemühendislik,
 } from "../assets";
 
 export const navLinks = [
@@ -37,8 +38,20 @@ export const navLinks = [
     title: "About",
   },
   {
+    id: "tech",
+    title: "Skills",
+  },
+  {
     id: "work",
-    title: "Work",
+    title: "Experience",
+  },
+  {
+    id: "education",
+    title: "Education",
+  },
+  {
+    id: "achievements",
+    title: "Achievements",
   },
   {
     id: "contact",
@@ -118,22 +131,37 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Mobile App Developer",
-    company_name: "Gaziantep Bilişim",
-    icon: starbucks,
-    iconBg: "#383E56",
+    title: "Full Stack Developer",
+    company_name: "Gin Teknoloji",
+    icon: ginteknoloji,
+    iconBg: "#E6DEDD",
     date: "2025 - Present",
     points: [
-      "Developing and maintaining mobile applications using Flutter and Firebase.",
-      "Building RESTful APIs with Laravel and PHP for mobile app backends.",
-      "Implementing real-time features and cloud storage solutions using Firebase.",
-      "Testing and debugging mobile applications using Postman for API integration.",
+      "Developing and maintaining mobile applications using modern frameworks and technologies.",
+      "Building responsive web applications and implementing frontend/backend solutions.",
+      "Designing and integrating RESTful APIs for seamless data communication.",
+      "Working with SQL databases for data management and optimization.",
+      "Creating user interfaces and implementing UI/UX designs for web and mobile platforms.",
+      "Collaborating with cross-functional teams to deliver high-quality software solutions.",
     ],
   },
   {
     title: "Mobile App Developer",
     company_name: "Gaziantep Bilişim",
-    icon: tesla,
+    icon: gbbbilisim,
+    iconBg: "#E6DEDD",
+    date: "2025",
+    points: [
+      "Developed and maintained mobile applications using Flutter and Firebase.",
+      "Built RESTful APIs with Laravel and PHP for mobile app backends.",
+      "Implemented real-time features and cloud storage solutions using Firebase.",
+      "Tested and debugged mobile applications using Postman for API integration.",
+    ],
+  },
+  {
+    title: "Mobile App Developer",
+    company_name: "Gaziantep Bilişim",
+    icon: gbbbilisim,
     iconBg: "#E6DEDD",
     date: "2023",
     points: [
@@ -146,8 +174,8 @@ const experiences = [
   {
     title: "AI/ML Developer",
     company_name: "NLK Bilgi Teknolojileri A.Ş",
-    icon: shopify,
-    iconBg: "#383E56",
+    icon: nlkbilgiteknolojileri,
+    iconBg: "#E6DEDD",
     date: "2023",
     points: [
       "Worked on artificial intelligence and machine learning projects.",
@@ -159,7 +187,7 @@ const experiences = [
   {
     title: "Automation Technician",
     company_name: "Uygur Otomasyon ve Mühendislik",
-    icon: meta,
+    icon: uygurotomasyonvemühendislik,
     iconBg: "#E6DEDD",
     date: "2019",
     points: [
