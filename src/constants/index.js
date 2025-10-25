@@ -8,7 +8,6 @@ import {
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
@@ -22,7 +21,6 @@ import {
   carrent,
   jobit,
   tripguide,
-  threejs,
   flutter,
   python,
   php,
@@ -31,7 +29,6 @@ import {
   mysql,
   postgresql,
   dart,
-  tensorflow,
 } from "../assets";
 
 export const navLinks = [
@@ -110,10 +107,6 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "TensorFlow",
-    icon: tensorflow,
-  },
-  {
     name: "git",
     icon: git,
   },
@@ -178,32 +171,7 @@ const experiences = [
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "Thanks to İbrahim's mobile application, our operations have become much more efficient. His technical knowledge and problem-solving skills are excellent.",
-    name: "Fatih Kirazoğlu",
-    designation: "Automation Teacher",
-    company: "OSB Technical College",
-    image: "https://randomuser.me/api/portraits/men/1.jpg",
-  },
-  {
-    testimonial:
-      "His performance in artificial intelligence projects and learning speed are admirable. He is a developer with a bright future.",
-    name: "Ali Yılmaz",
-    designation: "Project Manager",
-    company: "NLK Bilgi Teknolojileri",
-    image: "https://randomuser.me/api/portraits/men/2.jpg",
-  },
-  {
-    testimonial:
-      "The applications he developed with Flutter are both user-friendly and high-performance. I definitely recommend him.",
-    name: "Ayşe Demir",
-    designation: "Product Manager",
-    company: "Gaziantep Bilişim",
-    image: "https://randomuser.me/api/portraits/women/3.jpg",
-  },
-];
+
 
 const projects = [
   {

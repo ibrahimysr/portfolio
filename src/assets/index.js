@@ -16,20 +16,17 @@ import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
 
-import flutter from "./tech/flutter.svg";
-import python from "./tech/python.svg";
+import flutter from "./tech/flutter.png";
+import python from "./tech/python.png";
 import php from "./tech/php.svg";
 import laravel from "./tech/laravel.png";
 import firebase from "./tech/firebase.png";
 import mysql from "./tech/mysql.png";
 import postgresql from "./tech/postgresql.png";
 import dart from "./tech/dart.png";
-import tensorflow from "./tech/tensorflow.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -58,10 +55,8 @@ export {
   mongodb,
   nodejs,
   reactjs,
-  redux,
   tailwind,
   typescript,
-  threejs,
   flutter,
   python,
   php,
@@ -70,7 +65,6 @@ export {
   mysql,
   postgresql,
   dart,
-tensorflow,
   meta,
   shopify,
   starbucks,

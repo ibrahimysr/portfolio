@@ -5,7 +5,6 @@ import About from "./About";
 import Tech2D from "./Tech2D";
 import Experience from "./Experience";
 import WorksInfinite from "./WorksInfinite";
-import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
 
@@ -17,7 +16,6 @@ export {
   Tech2D,
   Experience,
   WorksInfinite,
-  Feedbacks,
   Contact,
   CanvasLoader,
   EarthCanvas, 
