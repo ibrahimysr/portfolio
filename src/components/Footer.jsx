@@ -129,21 +129,10 @@ const Footer = () => {
         <div className='h-px bg-gradient-to-r from-transparent via-[#915EFF]/30 to-transparent mb-8' />
 
         {/* Bottom Bar */}
-        <div className='flex flex-col sm:flex-row justify-between items-center gap-4'>
-          <p className='text-secondary text-[14px] text-center sm:text-left'>
+        <div className='flex justify-center items-center'>
+          <p className='text-secondary text-[14px] text-center'>
             © {currentYear} İbrahim Yaşar. All rights reserved.
           </p>
-          <div className='flex items-center gap-2 text-secondary text-[14px]'>
-            <span>Built with</span>
-            <motion.span
-              animate={{ scale: [1, 1.2, 1] }}
-              transition={{ duration: 1, repeat: Infinity, repeatDelay: 1 }}
-              className='text-red-500'
-            >
-              ❤️
-            </motion.span>
-            <span>using React & Three.js</span>
-          </div>
         </div>
       </div>
     </footer>
