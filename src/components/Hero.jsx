@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 z-10`}
+        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 z-10 pointer-events-none`}
       >
         <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
@@ -24,14 +24,14 @@ const Hero = () => {
           </p>
 
           {/* Social Links */}
-          <div className='flex gap-4 mt-8'>
+          <div className='flex gap-4 mt-8 pointer-events-auto'>
             <motion.a
               href='https://github.com/ibrahimysr'
               target='_blank'
               rel='noopener noreferrer'
               whileHover={{ scale: 1.1, y: -3 }}
               whileTap={{ scale: 0.95 }}
-              className='w-12 h-12 rounded-full bg-tertiary border-2 border-[#915EFF]/30 hover:border-[#915EFF] flex items-center justify-center text-secondary hover:text-[#915EFF] transition-all duration-300 shadow-lg hover:shadow-[#915EFF]/50'
+              className='w-12 h-12 rounded-full bg-tertiary border-2 border-[#915EFF]/30 hover:border-[#915EFF] flex items-center justify-center text-secondary hover:text-[#915EFF] transition-all duration-300 shadow-lg hover:shadow-[#915EFF]/50 pointer-events-auto'
               aria-label='GitHub'
             >
               <svg className='w-6 h-6' fill='currentColor' viewBox='0 0 24 24'>
@@ -86,8 +86,8 @@ const Hero = () => {
         <ComputersCanvas />
       </div>
 
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-10'>
-        <a href='#about'>
+      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-10 pointer-events-none'>
+        <a href='#about' className='pointer-events-auto'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div
               animate={{
