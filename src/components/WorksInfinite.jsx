@@ -22,28 +22,59 @@ const ProjectCard = ({ project, isActive }) => {
       }`}
     >
       <div className='bg-tertiary rounded-2xl overflow-hidden shadow-2xl hover:shadow-purple-500/30 transition-shadow duration-300'>
-        <div className='relative w-full h-[250px] overflow-hidden group'>
-          <img
-            src={project.image}
-            alt={project.name}
-            className='w-full h-full object-cover transition-transform duration-500 group-hover:scale-110'
-          />
-          
-          <div className='absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent' />
-          
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-            className='absolute top-4 right-4 bg-black/70 backdrop-blur-sm p-3 rounded-full cursor-pointer hover:bg-[#915EFF] transition-colors'
-            onClick={() => window.open(project.source_code_link, "_blank")}
-          >
+        {project.image && (
+          <div className='relative w-full h-[250px] overflow-hidden group'>
             <img
-              src={github}
-              alt='github'
-              className='w-6 h-6 object-contain'
+              src={project.image}
+              alt={project.name}
+              className='w-full h-full object-cover transition-transform duration-500 group-hover:scale-110'
             />
-          </motion.div>
-        </div>
+            
+            <div className='absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent' />
+            
+            <div className='absolute top-4 right-4 flex gap-2'>
+              {project.play_store_link && (
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                  className='bg-black/70 backdrop-blur-sm p-3 rounded-full cursor-pointer hover:bg-[#00cea8] transition-colors'
+                  onClick={() => window.open(project.play_store_link, "_blank")}
+                  title='View on Play Store'
+                >
+                  <svg className='w-6 h-6 text-white' fill='currentColor' viewBox='0 0 24 24'>
+                    <path d='M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 0 1 0 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658L16.802 8.99l-2.303 2.303-8.635-8.635z' />
+                  </svg>
+                </motion.div>
+              )}
+              {project.live_link && !project.play_store_link && (
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                  className='bg-black/70 backdrop-blur-sm p-3 rounded-full cursor-pointer hover:bg-[#00cea8] transition-colors'
+                  onClick={() => window.open(project.live_link, "_blank")}
+                  title='Visit Live Site'
+                >
+                  <svg className='w-6 h-6 text-white' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
+                    <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9' />
+                  </svg>
+                </motion.div>
+              )}
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                className='bg-black/70 backdrop-blur-sm p-3 rounded-full cursor-pointer hover:bg-[#915EFF] transition-colors'
+                onClick={() => window.open(project.source_code_link, "_blank")}
+                title='View Code'
+              >
+                <img
+                  src={github}
+                  alt='github'
+                  className='w-6 h-6 object-contain'
+                />
+              </motion.div>
+            </div>
+          </div>
+        )}
 
         <div className='p-6'>
           <h3 className='text-white font-bold text-[24px] mb-2'>
@@ -53,7 +84,7 @@ const ProjectCard = ({ project, isActive }) => {
             {project.description}
           </p>
 
-          <div className='flex flex-wrap gap-2'>
+          <div className='flex flex-wrap gap-2 mb-4'>
             {project.tags.map((tag) => (
               <span
                 key={tag.name}
@@ -63,6 +94,52 @@ const ProjectCard = ({ project, isActive }) => {
               </span>
             ))}
           </div>
+
+          {!project.image && (
+            <div className='flex gap-3 mt-4'>
+              {project.play_store_link && (
+                <motion.a
+                  href={project.play_store_link}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className='flex-1 bg-gradient-to-r from-[#00cea8] to-[#00a896] hover:from-[#00a896] hover:to-[#00cea8] text-white px-4 py-2 rounded-lg font-medium text-[14px] transition-all flex items-center justify-center gap-2'
+                >
+                  <svg className='w-5 h-5' fill='currentColor' viewBox='0 0 24 24'>
+                    <path d='M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 0 1 0 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658L16.802 8.99l-2.303 2.303-8.635-8.635z' />
+                  </svg>
+                  Play Store
+                </motion.a>
+              )}
+              {project.live_link && !project.play_store_link && (
+                <motion.a
+                  href={project.live_link}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className='flex-1 bg-gradient-to-r from-[#00cea8] to-[#00a896] hover:from-[#00a896] hover:to-[#00cea8] text-white px-4 py-2 rounded-lg font-medium text-[14px] transition-all flex items-center justify-center gap-2'
+                >
+                  <svg className='w-5 h-5' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
+                    <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9' />
+                  </svg>
+                  Visit Site
+                </motion.a>
+              )}
+              <motion.a
+                href={project.source_code_link}
+                target='_blank'
+                rel='noopener noreferrer'
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className='flex-1 bg-tertiary border-2 border-[#915EFF] hover:bg-[#915EFF] text-white px-4 py-2 rounded-lg font-medium text-[14px] transition-all flex items-center justify-center gap-2'
+              >
+                <img src={github} alt='github' className='w-5 h-5 object-contain' />
+                GitHub
+              </motion.a>
+            </div>
+          )}
         </div>
       </div>
     </motion.div>
@@ -222,9 +299,9 @@ const WorksInfinite = () => {
         )}
       </div>
 
-      <div className='text-center mt-16 text-secondary text-[12px] opacity-40'>
-        Use ← → arrow keys or hover to pause
-      </div>
+        <div className='text-center mt-16 text-secondary text-[12px] opacity-40'>
+          Use ← → arrow keys or hover to pause
+        </div>
     </>
   );
 };

@@ -220,7 +220,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: null, // TODO: Add project image
     source_code_link: "https://github.com/ibrahimysr",
   },
   {
@@ -241,7 +241,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: null,
     source_code_link: "https://github.com/ibrahimysr",
   },
   {
@@ -262,8 +262,205 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: null, 
     source_code_link: "https://github.com/ibrahimysr",
+  },
+  {
+    name: "Falcının Dünyası",
+    description:
+      "A comprehensive fortune-telling mobile app featuring daily horoscopes, tarot and coffee cup readings, dream interpretation, and personalized daily predictions. Users can save their fortune history and track insights over time.",
+    tags: [
+      {
+        name: "flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "dart",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: null,
+    source_code_link: "https://github.com/ibrahimysr",
+    play_store_link: "https://play.google.com/store/apps/details?id=com.falcinin_dunyasi&hl=tr",
+  },
+  {
+    name: "Akiloji - Language Learning App",
+    description:
+      "An advanced language learning platform with categorized quizzes, vocabulary trainer, instant translation, and online competitions. Features daily challenges, audio/visual questions, multiplayer interactions, and progressive learning series.",
+    tags: [
+      {
+        name: "flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "php",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: null,
+    source_code_link: "https://github.com/ibrahimysr",
+    play_store_link: "https://play.google.com/store/apps/details?id=com.ginteknoloji.akiloji&hl=tr",
+  },
+  {
+    name: "Dijital Demokrasi Mobile",
+    description:
+      "A democratic engagement platform where users create discussions, submit proposals, and participate in polls. Features include user following, blogs with comments/likes, gamification with points and badges for active contributors.",
+    tags: [
+      {
+        name: "flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "laravel",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: null,
+    source_code_link: "https://github.com/ibrahimysr",
+    play_store_link: "https://play.google.com/store/search?q=dijital%20demokrasi&c=apps&hl=tr",
+  },
+  {
+    name: "Akıllı Ev Teknolojileri",
+    description:
+      "A smart home control mobile application for a custom IoT system. Provides complete home automation control including lighting, climate, security, and appliances management from a single intuitive mobile interface.",
+    tags: [
+      {
+        name: "flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "iot",
+        color: "green-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: null,
+    source_code_link: "https://github.com/ibrahimysr",
+  },
+  {
+    name: "dijitaldemokrasi.org",
+    description:
+      "A full-stack web platform for democratic participation and civic engagement. Built from scratch with Laravel, featuring discussion forums, proposal systems, polls, and interactive community features for citizens.",
+    tags: [
+      {
+        name: "laravel",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "php",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: null, 
+    source_code_link: "https://dijitaldemokrasi.org",
+    live_link: "https://dijitaldemokrasi.org",
+  },
+  {
+    name: "ginteknoloji.com",
+    description:
+      "Corporate website for Gin Teknoloji, a technology solutions company. Complete website development including company portfolio, services showcase, contact systems, and modern responsive design.",
+    tags: [
+      {
+        name: "laravel",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "php",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: null, 
+    source_code_link: "https://ginteknoloji.com",
+    live_link: "https://ginteknoloji.com",
+  },
+  {
+    name: "deta.org.tr",
+    description:
+      "Full-stack website development for DETA organization. Features include content management, news and events systems, member portal, and comprehensive organizational information architecture.",
+    tags: [
+      {
+        name: "laravel",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "php",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: null, 
+    source_code_link: "https://deta.org.tr",
+    live_link: "https://deta.org.tr",
+  },
+  {
+    name: "kardeslikdernegi.org",
+    description:
+      "Complete website solution for Kardeşlik Derneği (Brotherhood Association). Includes donation systems, volunteer management, event calendar, blog posts, and member area with secure authentication.",
+    tags: [
+      {
+        name: "laravel",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "php",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: null, 
+    source_code_link: "https://kardeslikdernegi.org",
+    live_link: "https://kardeslikdernegi.org",
+  },
+  {
+    name: "fixyou.com.tr",
+    description:
+      "A comprehensive service platform for repair and maintenance solutions. Full-stack development with service booking system, technician management, customer portal, real-time tracking, and payment integration.",
+    tags: [
+      {
+        name: "laravel",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "php",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: null, 
+    source_code_link: "https://fixyou.com.tr",
+    live_link: "https://fixyou.com.tr",
   },
 ];
 
@@ -282,6 +479,11 @@ const achievements = [
 ];
 
 const certifications = [
+  {
+    title: "Microsoft Azure Fundamentals",
+    organization: "Miuul",
+    year: "2024",
+  },
   {
     title: "Flutter Development",
     organization: "Udemy",
