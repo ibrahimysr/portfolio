@@ -36,9 +36,7 @@ import uygurotomasyonvemühendislik from "./company/uygur.png";
 
 import ginteknoloji from "./company/ginteknoloji.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+
 
 export {
   logo,
@@ -73,7 +71,5 @@ export {
   gbbbilisim,
   nlkbilgiteknolojileri,
   uygurotomasyonvemühendislik,
-  carrent,
-  jobit,
-  tripguide,
+  
 };

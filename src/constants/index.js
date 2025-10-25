@@ -15,9 +15,6 @@ import {
   figma,
   docker,
 
-  carrent,
-  jobit,
-  tripguide,
   flutter,
   python,
   php,
