@@ -5,8 +5,10 @@ import About from "./About";
 import Tech2D from "./Tech2D";
 import Experience from "./Experience";
 import Education from "./Education";
+import Achievements from "./Achievements";
 import WorksInfinite from "./WorksInfinite";
 import Contact from "./Contact";
+import Footer from "./Footer";
 import CanvasLoader from "./Loader";
 
 
@@ -17,8 +19,10 @@ export {
   Tech2D,
   Experience,
   Education,
+  Achievements,
   WorksInfinite,
   Contact,
+  Footer,
   CanvasLoader,
   EarthCanvas, 
   ComputersCanvas, 
