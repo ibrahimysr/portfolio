@@ -290,4 +290,4 @@ const education = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects, achievements, certifications, education };
+export { services, technologies, experiences, projects, achievements, certifications, education };
