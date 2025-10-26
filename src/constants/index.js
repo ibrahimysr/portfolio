@@ -9,7 +9,6 @@ import {
   css,
   reactjs,
   tailwind,
-  nodejs,
   mongodb,
   git,
   figma,
@@ -23,6 +22,8 @@ import {
   mysql,
   postgresql,
   dart,
+  postman,
+  csharp,
   ginteknoloji,
   gbbbilisim,
   nlkbilgiteknolojileri,
@@ -96,9 +97,14 @@ const technologies = [
     name: "React JS",
     icon: reactjs,
   },
+
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: "PHP",
+    icon: php,
+  },
+  {
+    name: "C#",
+    icon: csharp,
   },
   {
     name: "Laravel",
@@ -115,6 +121,10 @@ const technologies = [
   {
     name: "MongoDB",
     icon: mongodb,
+  },
+  {
+    name: "Postman",
+    icon: postman,
   },
   {
     name: "git",

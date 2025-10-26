@@ -14,19 +14,20 @@ import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 
 import flutter from "./tech/flutter.png";
 import python from "./tech/python.png";
-import php from "./tech/php.svg";
+import php from "./tech/php.png";
 import laravel from "./tech/laravel.png";
 import firebase from "./tech/firebase.png";
 import mysql from "./tech/mysql.png";
 import postgresql from "./tech/postgresql.png";
 import dart from "./tech/dart.png";
+import postman from "./tech/postman.png";
+import csharp from "./tech/csharp.png";
 
 
 
@@ -54,7 +55,6 @@ export {
   html,
   javascript,
   mongodb,
-  nodejs,
   reactjs,
   tailwind,
   typescript,
@@ -66,6 +66,8 @@ export {
   mysql,
   postgresql,
   dart,
+  postman,
+  csharp,
 
   ginteknoloji,
   gbbbilisim,
