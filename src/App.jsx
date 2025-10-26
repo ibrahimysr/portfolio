@@ -13,9 +13,9 @@ const App = () => {
         <About />
         <Tech2D />
         <Experience />
+        <WorksInfinite />
         <Education />
         <Achievements />
-        <WorksInfinite />
         <div className='relative z-0'>
           <Contact />
           <StarsCanvas />
